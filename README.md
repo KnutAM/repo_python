@@ -33,6 +33,12 @@ Unit testing can be setup so that it can be run locally. However, the real power
 
 # NOTES
 
+## Badges
+
+A problem that can occur is that the badges don't update correctly, this can be solved by adding `&kill_cache=1` at the end of the badge url. 
+
+## Random notes
+
 Difference between requirements.txt and setup.py: 
 https://caremad.io/posts/2013/07/setup-vs-requirement/
 
