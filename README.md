@@ -25,6 +25,8 @@ Already, requirements for documentation and testing have been added. After this 
 
 Documentation using sphinx allows automatic documentation using docstrings in the code. First, set it up to work locally. For open source projects this can be published to ReadTheDocs. Another alternative is using the GitHub pages. 
 
+You should take the badge embed link from your documentation at readthedocs and replace the current (see "Badges" to ensure that it updates correctly)
+
 ### Testing
 
 Unit testing can be setup so that it can be run locally. However, the real power and visibility comes when this is run each time the code is pushed to ensure that it works as intended and that nothing has been broken. First, `pytest` is used to create simple tests. Then, `TravisCI` is used to get continuous testing on each push. Finally, code coverage is analyzed. 
@@ -37,7 +39,17 @@ With the conda enironment for development active, and in the present folder, run
 
 #### Automatic testing using TravisCI
 
+Please see [Travis CI Documentation](https://docs.travis-ci.com/user/tutorial/)
+
+Note that the `.travis.yml` has already been created and should work if updated according to above. Hence you only need to grant Travis access to your github repository.
+
+You must update the badge with the link provided by Travis CI (see "Badges" to ensure that it updates correctly)
+
 #### Coverage analysis using coverage.io
+
+Make an account on [coveralls.io](www.coveralls.io) and add your repository. 
+
+You must update the badge with the link provided by coveralls.io (see "Badges" to ensure that it updates correctly)
 
 ### Badges
 
