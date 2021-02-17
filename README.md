@@ -29,6 +29,10 @@ Unit testing can be setup so that it can be run locally. However, the real power
 
 #### pytest
 
+With the conda enironment for development active, and in the present folder, run
+
+``pytest --cov=package_name test/`` (where ``package_name`` should be updated to the present project)
+
 #### Automatic testing using TravisCI
 
 #### Coverage analysis using coverage.io
@@ -37,13 +41,20 @@ Unit testing can be setup so that it can be run locally. However, the real power
 
 A problem that can occur is that the badges don't update correctly, this can be solved by adding `&kill_cache=1` at the end of the badge url. 
 
-## Creating the environment
+## Creating the development environment
+
+In order for the test coverage to work correctly on the local computer, the package should not be installed. Therefore, ``pip install .`` should not be used. Instead, ``pip install -r requirements.txt``  should be used. 
 
 ### Using conda (recommended if scipy or numpy is used)
 
+Create and activate a new conda environment (See Installation below) and cd to this folder. Then, install pip followed by the requirements for this project:
 
+- ``conda install pip`` 
+- ``pip install -r requirements.txt``
 
 ### Using pip (alternative approach)
+
+*Not sure how this will work with code test coverage unless there is a clean environment or installation...*
 
 # Readme for end users
 
