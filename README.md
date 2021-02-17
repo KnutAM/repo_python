@@ -1,4 +1,6 @@
 # Template for python repositories
+[![Build Status](https://travis-ci.com/KnutAM/repo_python.svg?branch=main&kill_cache=1)](https://travis-ci.com/KnutAM/repo_python)  [![Coverage Status](https://coveralls.io/repos/github/KnutAM/repo_python/badge.svg?branch=main&kill_cache=1)](https://coveralls.io/github/KnutAM/repo_python?branch=main)  [![Documentation Status](https://readthedocs.org/projects/repo-python/badge/?version=latest&kill_cache=1)](https://repo-python.readthedocs.io/en/latest/?badge=latest)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Initial modifications for a new project
 
 The following should be modified:
